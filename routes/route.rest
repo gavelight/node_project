@@ -1,0 +1,52 @@
+GET http://localhost:3001/users
+
+###
+
+GET http://localhost:3001/users/5db9ffe77515161f4410a3b0
+
+###
+
+GET http://localhost:3001/users
+
+{
+    "email": "or",
+    "password": "b"
+}
+
+###
+
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+    "firstName": "Rafael",
+    "lastName": "Nadal",
+    "email": "rafa@rollandgarros.com",
+    "password": "654321",
+    "operation": "register"
+}
+
+###
+
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+    "email": "rog@wimbledon.com",
+    "password": "123456",
+    "operation": "login"
+}
+
+###
+
+DELETE http://localhost:3001/users/5db9ffe77515161f4410a3b0
+
+###
+
+PATCH  http://localhost:3001/users/5dba02f6b8376a0d04a26dba
+Content-Type: application/json
+
+{
+    "firstName": "Or",
+    "lastName": "Natan"
+}
